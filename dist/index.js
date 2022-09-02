@@ -18,7 +18,6 @@ try {
       workflow_id: core.getInput("workflow_id"),
       status: "success",
       branch: core.getInput("branch"),
-      event: "push",
     })
     .then((res) => {
       const lastSuccessCommitHash =
